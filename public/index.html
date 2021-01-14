@@ -13,5 +13,16 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script>
+        function adjustViewHeight(){
+            window.addEventListener('resize', () => {
+                alert('X')
+                document.querySelector(':root').style.setProperty('--vh', window.innerHeight/100 + 'px');
+            })
+            // document.querySelector(':root').style.setProperty('--vh', window.innerHeight/100 + 'px');
+        }
+        adjustViewHeight();
+    </script>
   </body>
 </html>
